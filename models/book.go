@@ -23,6 +23,6 @@ func GetBookByID(id int) Book {
 }
 
 func SaveBook(book Book) Book {
-	utility.DB().create(&book)
+	utility.DB().Create(&book)
 	return book
 }
